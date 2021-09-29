@@ -21,13 +21,13 @@ SUPPORTED_COLORS = ",".join(color_codes.keys())
 # Get color from Environment variable
 COLOR_FROM_ENV = os.environ.get('APP_COLOR')
 # Generate a random color
-COLOR = random.choice(["red", "green", "blue", "blue2", "darkblue", "pink"])
+COLOR = random.choice(["red"])
 
 
 @app.route("/")
 def main():
     # return 'Hello'
-    return render_template('hello.html', name=socket.gethostname(), color=color_codes[COLOR])
+    return render_template('hello Steamtalks', name=socket.gethostname(), color=color_codes[COLOR])
 
 
 if __name__ == "__main__":
