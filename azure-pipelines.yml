@@ -15,4 +15,10 @@ steps:
     connectionType: 'OpenShift Connection Service'
     openshiftService: 'oc-nemkonto03'
     cmd: 'oc new-project nmd-talent-lab'
+    
+- task: oc-cmd@2
+  inputs:
+    connectionType: 'OpenShift Connection Service'
+    openshiftService: 'oc-nemkonto03'
     cmd: 'oc create deployment nginx --image=bitnami/nginx --replicas=3 -n nmd-talent-lab'
+
