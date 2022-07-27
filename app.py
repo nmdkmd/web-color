@@ -22,7 +22,7 @@ SUPPORTED_COLORS = ",".join(color_codes.keys())
 COLOR_FROM_ENV = os.environ.get('APP_COLOR')
 # Generate a random color
 # COLOR = random.choice(["red", "green", "blue", "blue2", "darkblue", "pink"])
-COLOR = "green"
+COLOR = "blue"
 
 
 @app.route("/")
